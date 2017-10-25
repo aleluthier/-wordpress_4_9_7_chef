@@ -24,13 +24,13 @@ define('WP_SITEURL','dinuieeyd2ex5.cloudfront.net');
 define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'esdras');
+define('DB_USER', '');
 
 /** MySQL database password */
 define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', 'wordpress.ctqymgyuuhlq.us-east-1.rds.amazonaws.com');
+define('DB_HOST', '');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
