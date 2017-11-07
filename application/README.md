@@ -137,15 +137,36 @@ end
 * `action_on_update_immediately` – Run the `action_on_update` notification with
   `:immediately`. *(default: false)*
 
+### `application_cookbook_file`, `application_directory`, `application_file`, `application_template`
+
+The `application_cookbook_file`, `application_directory`, `application_file`, and `application_template`
+resources extend the core Chef resources to take some application-level
+configuration in to account:
+
+```ruby
+application '/opt/myapp' do
+  template 'myapp.conf' do
+    source 'myapp.conf.erb'
+  end
+  directory 'logs'
+end
+```
+
+If the resource name is a relative path, it will be expanded relative to the
+application path. If an owner or group is declared for the application, those
+will be the default user and group for the resource.
+
+All other actions and properties are the same as the similar resource in core Chef.
+
 ## Examples
 
 Some test recipes are available as examples for common application frameworks:
 
 * [Sinatra](https://github.com/poise/application_ruby/blob/master/test/cookbooks/application_ruby_test/recipes/sinatra.rb)
 * [Rails](https://github.com/poise/application_ruby/blob/master/test/cookbooks/application_ruby_test/recipes/rails.rb)
-* [Flask](https://github.com/poise/application_python/blob/master/test/cookbooks/application_python_test/recipes/flask.rb)
-* [Django](https://github.com/poise/application_python/blob/master/test/cookbooks/application_python_test/recipes/django.rb)
-* [Express](https://github.com/poise/application_javascript/blob/master/test/cookbooks/application_javascript_test/recipes/express.rb)
+* [Flask](https://github.com/poise/application_python/blob/master/test/cookbook/recipes/flask.rb)
+* [Django](https://github.com/poise/application_python/blob/master/test/cookbook/recipes/django.rb)
+* [Express](https://github.com/poise/application_javascript/blob/master/test/cookbook/recipes/express.rb)
 
 ## Upgrading From 4.x
 
@@ -224,7 +245,7 @@ The Poise test server infrastructure is sponsored by [Rackspace](https://rackspa
 
 ## License
 
-Copyright 2015, Noah Kantrowitz
+Copyright 2015-2016, Noah Kantrowitz
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
