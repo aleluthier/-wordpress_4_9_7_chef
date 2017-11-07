@@ -14,11 +14,7 @@
 # limitations under the License.
 #
 
-eval_gemfile File.expand_path('../../../Gemfile', __FILE__)
 
-gem 'chef', '~> 12.4.3'
-gem 'chefspec', '< 6'
-gem 'fauxhai', '<= 3.9.0'
-gem 'foodcritic', '< 8'
-gem 'gh', '0.14.0'
-gem 'rack', '< 2'
+module PoiseApplicationGit
+  VERSION = '1.2.0'
+end
