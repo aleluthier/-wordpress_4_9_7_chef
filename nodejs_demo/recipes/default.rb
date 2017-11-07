@@ -1,5 +1,5 @@
 app = search(:aws_opsworks_app).first
-app_path = "/var/www/html"
+app_path = "/srv/#{app['shortname']}"
 
 package "git" do
   options "--force-yes" if node["platform"] == "ubuntu" && node["platform_version"] == "16.04"
