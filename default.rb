@@ -6,9 +6,6 @@ package "git" do
 end
 
 application app_path do
-  javascript "4"
-  environment.update("PORT" => "80")
-  environment.update(app["environment"])
 
   git app_path do
     repository app["app_source"]["url"]
