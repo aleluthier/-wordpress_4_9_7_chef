@@ -21,7 +21,7 @@ template "/etc/nginx/nginx.conf" do
 end
 
 template "/etc/nginx/sites-available/default" do
- source "deafult.erb"
+ source "default.erb"
  owner "root"
  group "www-data"
  mode "640"
