@@ -1,13 +1,4 @@
-# Application Changelog
-
-## v5.2.0
-
-* Add `application_directory` resource.
-* Chef 13 compatibility.
-
-## v5.1.0
-
-* Add `application_cookbook_file`, `application_file`, and `application_template` resources.
+# Poise-Application Changelog
 
 ## v5.0.0
 
