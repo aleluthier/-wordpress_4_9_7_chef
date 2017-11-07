@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-application_git '/opt/test1' do
+application_git '/var/www/html' do
   repository 'https://github.com/esdrasrios/wordpres4.8.3.git'
   revision 'master'
 end
