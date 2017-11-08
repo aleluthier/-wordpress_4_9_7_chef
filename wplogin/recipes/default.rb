@@ -1,4 +1,4 @@
-file '/srv/www/wordpress/current/wp-login.php' do
+file '/srv/wordpress/wp-login.php' do
     action :delete
 end
 
