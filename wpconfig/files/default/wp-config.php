@@ -18,8 +18,8 @@
  * @package WordPress
  */
 
-define('WP_HOME','http://d1c1wyjk93pyo1.cloudfront.net');
-define('WP_SITEURL','http://d1c1wyjk93pyo1.cloudfront.net');
+define('WP_HOME','http://wptest.esdrasrios.me');
+define('WP_SITEURL','http://wptest.esdrasrios.me');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
