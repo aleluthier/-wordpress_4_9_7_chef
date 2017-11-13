@@ -18,6 +18,9 @@
  * @package WordPress
  */
 
+define('WP_HOME','http://ELBwp-1706345073.eu-west-2.elb.amazonaws.com');
+define('WP_SITEURL','http://ELBwp-1706345073.eu-west-2.elb.amazonaws.com');
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'mywordpressdb');
